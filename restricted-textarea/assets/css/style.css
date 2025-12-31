@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+}
+
+.container {
+    width: 60vw;
+    max-width: 600px;
+
+    margin: 2rem auto 0;
+}
+
+.text-container {
+    position: relative;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+.text {
+    font-size: 1.125rem;
+
+    width: 98%;
+    height: 10rem;
+    margin-left: 0.675rem;
+    margin-top: 0.675rem;
+    padding: 0.25rem;
+    border: none;
+    border-radius: 1rem;
+
+    resize: none;
+}
+
+.text:focus {
+    outline: none;
+}
+
+.counter {
+    position: absolute;
+    margin: 0;
+
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.text-full {
+    color: red;
+}
+
+.container-full {
+    border-color: red;
+}
