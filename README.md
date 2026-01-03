@@ -21,3 +21,8 @@ I'm concentrating my roadmap.sh projects in this repository.
 
 [See the goal](https://roadmap.sh/projects/accordion) which I had to go to.  
 [See my repository](https://github.com/FilipeS0/projects-javascript-roadmapsh/tree/main/accordion) that's what I did.
+
+## task-tracker
+
+[See the goal](https://roadmap.sh/projects/task-tracker) which I had to go to.  
+[See my repository](https://github.com/FilipeS0/projects-javascript-roadmapsh/tree/main/task-tracker) that's what I did.

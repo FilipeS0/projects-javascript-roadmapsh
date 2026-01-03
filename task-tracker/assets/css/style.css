@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.1rem;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+
+    width: 600px;
+
+    margin: 3rem auto;
+    padding: 1.5rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+
+    border: 2px solid black;
+    border-radius: 0.75rem;
+    padding: 0.375rem;
+    margin: 0.75rem 0;
+}
+
+.input input {
+    width: 90%;
+
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+}
+
+.input button {
+    background-color: white;
+
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+}
+
+.input button:hover {
+    cursor: pointer;
+}
