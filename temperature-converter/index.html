@@ -4,13 +4,43 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Temperature Converter</title>
+
+        <link rel="stylesheet" href="asstes/css/style.css" />
     </head>
     <body>
         <section class="container">
             <h1>Temperature Converter</h1>
             <p>Enter the temperature, select units and submit</p>
 
-            input
+            <div class="input-area">
+                <input
+                    type="number"
+                    name="degrees"
+                    id="degrees"
+                    placeholder="degrees"
+                />
+                <div class="from">
+                    <button>From unit</button>
+                    <ul class="options not-displayed">
+                        <li class="deg">Fahrenheit</li>
+                        <li class="deg">Celsius</li>
+                        <li class="deg">Kelvin</li>
+                    </ul>
+                </div>
+                <div class="to">
+                    <button>To unit</button>
+                    <ul class="options not-displayed">
+                        <li class="deg">Fahrenheit</li>
+                        <li class="deg">Celsius</li>
+                        <li class="deg">Kelvin</li>
+                    </ul>
+                </div>
+                <input type="submit" value="Convert" disabled />
+            </div>
+
+            <p class="result">a</p>
         </section>
+
+        <script src="asstes/js/main.js"></script>
     </body>
 </html>
