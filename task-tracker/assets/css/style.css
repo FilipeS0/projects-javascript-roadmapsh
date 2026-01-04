@@ -102,3 +102,7 @@
     text-decoration: line-through;
     color: #e8e8e8;
 }
+
+.check {
+    overflow-wrap: anywhere;
+}
