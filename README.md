@@ -24,7 +24,7 @@ I'm concentrating my roadmap.sh projects in this repository.
 
 ## task-tracker
 
-[See the goal](https://roadmap.sh/projects/task-tracker) which I had to go to.  
+[See the goal](https://roadmap.sh/projects/task-tracker-js) which I had to go to.  
 [See my repository](https://github.com/FilipeS0/projects-javascript-roadmapsh/tree/main/task-tracker) that's what I did.
 
 ## temperature-converter
