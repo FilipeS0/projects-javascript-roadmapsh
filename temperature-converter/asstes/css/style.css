@@ -91,6 +91,7 @@
 
     max-width: 8rem;
     width: 8rem;
+    max-height: fit-content;
 
     border: 1px solid black;
     border-radius: 0.5rem;
@@ -98,8 +99,8 @@
 
     background-color: white;
 
-    visibility: visible;
-    transition: visibility 0.3s, max-width 0.3s;
+    opacity: 1;
+    transition: opacity 0.2s, visibility 0.2s;
 
     cursor: pointer;
 }
@@ -116,8 +117,8 @@
 }
 
 .not-displayed {
+    opacity: 0;
     visibility: hidden;
-    max-height: 0;
 }
 
 input[type="submit"] {
@@ -152,7 +153,8 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 input[type="number"] {
-    -moz-appearance: textfield;
+    appearance: textfield;
+    text-align: center;
 }
 
 input[type="number"] {

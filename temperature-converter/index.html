@@ -6,6 +6,7 @@
         <title>Temperature Converter</title>
 
         <link rel="stylesheet" href="asstes/css/style.css" />
+        <script src="asstes/js/main.js" defer></script>
     </head>
     <body>
         <section class="container">
@@ -21,7 +22,7 @@
                 />
                 <div class="from">
                     <button>From unit</button>
-                    <ul class="options not-displayed">
+                    <ul id="fromList" class="options not-displayed">
                         <li class="deg">Fahrenheit</li>
                         <li class="deg">Celsius</li>
                         <li class="deg">Kelvin</li>
@@ -29,18 +30,16 @@
                 </div>
                 <div class="to">
                     <button>To unit</button>
-                    <ul class="options not-displayed">
+                    <ul id="toList" class="options not-displayed">
                         <li class="deg">Fahrenheit</li>
                         <li class="deg">Celsius</li>
                         <li class="deg">Kelvin</li>
                     </ul>
                 </div>
-                <input type="submit" value="Convert" disabled />
+                <input id="send" type="submit" value="Convert" disabled />
             </div>
 
             <p class="result">a</p>
         </section>
-
-        <script src="asstes/js/main.js"></script>
     </body>
 </html>
