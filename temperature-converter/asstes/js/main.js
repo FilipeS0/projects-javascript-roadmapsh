@@ -90,40 +90,39 @@ btnSubmit.addEventListener("click", () => {
     const degreesValue = parseFloat(inputDegrees.value);
     const fromUnit = accordionFrom.textContent.trim().toLowerCase();
     const toUnit = accordionTo.textContent.trim().toLowerCase();
+    let conversionResult;
 
     if (isNaN(degreesValue)) {
-        result.textContent = "Por favor, insira um número válido.";
+        result.textContent = "Please, insert a valid number.";
         return;
     }
 
     if (fromUnit === toUnit) {
-        result.textContent = "As unidades de origem e destino são iguais.";
+        result.textContent = "The origin units and destination are the same.";
         return;
     }
 
     if (fromUnit === "celsius") {
         if (toUnit === "kelvin") {
-            result.textContent = ``;
-            calcCelsiusToKelvin(degreesValue);
+            conversionResult = calcCelsiusToKelvin(degreesValue);
         } else if (toUnit === "fahrenheit") {
-            result.textContent = ``;
-            calcCelsiusToFah(degreesValue);
+            conversionResult = calcCelsiusToFah(degreesValue);
         }
     } else if (fromUnit === "kelvin") {
         if (toUnit === "celsius") {
-            result.textContent = ``;
-            calcKelvinToCelsius(degreesValue);
+            conversionResult = calcKelvinToCelsius(degreesValue);
         } else if (toUnit === "fahrenheit") {
-            result.textContent = ``;
-            calcKelvinToFah(degreesValue);
+            conversionResult = calcKelvinToFah(degreesValue);
         }
     } else if (fromUnit === "fahrenheit") {
         if (toUnit === "celsius") {
-            result.textContent = ``;
-            calcFahToCelsius(degreesValue);
+            conversionResult = calcFahToCelsius(degreesValue);
         } else if (toUnit === "kelvin") {
-            result.textContent = ``;
-            calcFahToKelvin(degreesValue);
+            conversionResult = calcFahToKelvin(degreesValue);
         }
     }
+
+    result.textContent = `${degreesValue} ${fromUnit} is ${conversionResult.toFixed(
+        2
+    )} ${toUnit}`;
 });
